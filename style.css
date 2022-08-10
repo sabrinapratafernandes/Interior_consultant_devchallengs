@@ -1,0 +1,208 @@
+body {
+  background-color: black;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+}
+
+.page{
+  border-style: solid;
+  border-color: #fff;
+  border-width: 2px;
+  padding: 5px;
+  margin: 15px;
+}
+
+.page-name {
+  font-size: 12px;
+  font-family: 'Crimson Pro', serif;
+}
+
+.navegation {
+  padding: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 769px) {
+  .navegation {
+    display: none;
+  }
+}
+
+.nav {
+  margin: 25px;
+}
+
+ul{
+  list-style: none;
+}
+
+.checkbox {
+  opacity: 0;
+}
+
+.navegation-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 25px;
+  z-index: 10;
+}
+
+@media (min-width: 769px) {
+  .navegation-mobile {
+    display: none;
+  }
+}
+
+.navegation-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: -100%; 
+  background-color: black;
+}
+
+input[type="checkbox"]:checked ~ .navegation-mobile-menu{
+  transform: translateX(100%);
+}
+
+label {
+  position:absolute;
+}
+
+.nav-mobile {
+  display: block;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  
+}
+
+.nav-mobile:hover {
+  background-color: #A9A9A9;
+  color: black;
+}
+
+
+.all-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between ;
+
+flex-wrap: wrap;
+}
+
+.content-text {
+  flex-direction: column;
+  margin-left: 25px;
+  padding: auto;
+}
+
+.content-title {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.content-description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.content-aditional {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.img-1 {
+  display: flex;
+}
+
+
+.img-1 img {
+  margin: 30px;
+  max-width: 600px;
+  object-fit: contain;
+}
+
+.profile-card{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  color:white;
+  width: 280px;
+  height: auto;
+  position: relative;
+  margin-top: -110px;
+  margin-left: 300px;
+  
+}
+
+.profile-card__personal-info{
+  display: flex;
+}
+
+.profile-card__personal-info--picture{
+  margin:10px;  
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.profile-card__personal-info--picture img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.profile-card__personal-info--name{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.profile-card__personal-info--role {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #828282;
+}
+
+.profile-card__about{
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+
+footer {
+  bottom: 0%;
+  position:fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
