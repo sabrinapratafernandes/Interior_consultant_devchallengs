@@ -163,6 +163,26 @@ flex-wrap: wrap;
   
 }
 
+@media (max-width:769px){
+  .img-1 img {
+  margin: 25px;
+  max-width: 350px;
+  }
+
+  .profile-card{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: white;
+    width: 260px;
+    height: auto;
+    position: relative;
+    margin-top: -80px;
+    margin-left: 85px;
+  }
+}
+
 .profile-card__personal-info{
   display: flex;
 }
